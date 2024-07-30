@@ -2,7 +2,7 @@
   "name": "jeyms-profile",
   "private": false,
   "version": "0.0.0",
-  "homepage": "https://jeymswork.github.io/JAP/",
+  "homepage": "https://jeymswork.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
