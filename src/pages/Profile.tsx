@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import Jeyms from '../assets/Jeyms.png'
 import { Link } from 'react-router-dom'
 import htmlLogo from '../assets/HTML.png'
@@ -19,6 +18,7 @@ import JapLogo from '../assets/JapLogo.png'
 import { FaCopyright, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
+import { useEffect } from 'react'
 
 const Profile = () => {
 
@@ -46,19 +46,6 @@ const Profile = () => {
     {no: 2, title: 'Portfolio Development', image: portfolioImage, paragraph: 'Showcase your work with our custom portfolio websites. Our expert team creates visually stunning and user-friendly sites that highlight your projects and skills, helping you attract new clients and opportunities. Make a lasting impression with a professional portfolio tailored to your needs.'},
     {no: 3, title: 'Mobile App Development', image: mobileImage, paragraph: 'Turn your ideas into reality with our custom mobile app development services. I create innovative, user-friendly apps tailored to your business needs, ensuring seamless performance and exceptional user experience. Elevate your brand with a standout mobile app.'},
   ]
-
-  const handleEmailClick = (e) => {
-    e.preventDefault(); // Prevent the default link behavior
-    const recipient = 'jeymswork@gmail.com';
-    const subject = 'Hello!';
-    const body = 'This is the body of the email.';
-    
-    // Construct the mailto URL with encoded parameters
-    const mailtoURL = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open the email client with the pre-filled email
-    window.location.href = mailtoURL;
-  };
   
   return (
     <div className='w-screen'>
@@ -109,7 +96,7 @@ const Profile = () => {
         <div className='text-white flex items-center space-x-3 lg:space-x-4 xl:space-x-5 2xl:space-x-6'>
           <FaPhone className='text-[16px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl cursor-pointer' />
           <FaLinkedin onClick={() => window.open('https://www.linkedin.com/in/james-ariel-pates-17a4a1292/', '_blank', 'noopener,noreferrer')} className='text-[16px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl cursor-pointer' />
-          <BiLogoGmail onClick={handleEmailClick} className='text-[16px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl cursor-pointer' />
+          <BiLogoGmail className='text-[16px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl cursor-pointer' />
           <FaInstagram className='text-[16px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl cursor-pointer' />
         </div>
       </div>
