@@ -5,8 +5,9 @@ import Profile from './pages/Profile';
 function App() {
 
   return (
-    <Router>
+    <Router basename='/JAP'>
       <div className='box-border overflow-x-hidden'>
+      <Profile />
         <Navbar />
         <Routes>
           <Route path="/" element={<Profile />} />
