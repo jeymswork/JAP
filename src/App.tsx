@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar'
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Profile from './pages/Profile';
 
 function App() {
